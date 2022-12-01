@@ -4,7 +4,12 @@ import config from 'config';
 import { CachingConfig } from '../models';
 
 export const elrondConfig = {
-  ...config.get('elrond'),
+  auctionContract : "erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqplllst77y4l",
+  stakingContract : "erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqylllslmq6y6",
+  chainId: "1",
+  version: 1,
+  metaChainShardId: 4294967295,
+  transactionProcessorMaxLookBehind: 1000,
   elastic: process.env.ELROND_INDEX,
   elrondApi: process.env.ELROND_API,
   gateway: process.env.ELROND_GATEWAY,
